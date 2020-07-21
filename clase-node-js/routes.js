@@ -7,7 +7,7 @@ const router = {
     routes : function(req,res){
         console.log("entre en la funcion routes");
         switch(req.url){
-            case "/":
+            case "/sumar":
                 res.end("estoy en el home");
                 break;
             case "/contacto":
