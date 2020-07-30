@@ -8,7 +8,7 @@ usuarios = JSON.parse(usuarios);
 
 console.log(usuarios);  
 
-for(var i = 0; i < usuarios.length; i++){
+for(var i = 0; i < usuarios.length; i++s){
     console.log(usuarios[i].nombre)
 }
 */
