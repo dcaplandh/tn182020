@@ -1,8 +1,17 @@
+const fs = require('fs');
+let productosDelCarrito = fs.readFileSync("productosDelCarrito.json");
+productosDelCarrito = JSON.parse(productosDelCarrito);
+
 let carrito = {
-    productos : [],
+    productos : productosDelCarrito,
     agregarProducto : (productoAAgregar)=>{
+        //si hay stock...
         if(productoAAgregar.stock > 0){
+            //agrego el producto al array del carrito
             carrito.productos.push(productoAAgregar);
+            //lo guardo en el json
+            fs.writeFileSync("productosDelCarrito.json",JSON.stringify(carrito.productos));
+            //le resto stock al producto
             productoAAgregar.stock--;
             console.log(carrito.usuario.nombre + " ha comprado " + productoAAgregar.nombre)
         }
@@ -22,6 +31,12 @@ let carrito = {
     total : 0,
     estado : "abierto"
 }
+
+//ejemplo con productos.json
+//let productos = JSON.parse(fs.readFileSync("productos.json"));
+//let productosConStock = productos.filter(producto=>producto.stock > 0);
+//let productosBaratos = productos.filter(producto=>producto.precio < 100);
+
 let salsa = {
     nombre: "Salsa de tomate",
     precio: 100,
@@ -38,7 +53,7 @@ let ventilador = {
     nombre: "Ventilador Philips",
     precio: 3500,
     codigo: 45654345,
-    stock: 0
+    stock: 3
 }
 console.log(carrito.usuario.nombre + " tiene un carrito " + carrito.estado);
 

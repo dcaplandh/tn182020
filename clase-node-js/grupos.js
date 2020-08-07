@@ -1,5 +1,5 @@
 var alumnos = [
-    'Altman, Gabriel','Barba, Hernan','Barbero, Juan','Belloc, Gaston','Blanco, Marina','Blejman, Arian','Böhm, Juan Francisco','Canzani, Lucas','Fernandez, Nelson','Gomez Beret, Agustin','Gutierres, Nahuel Agustin','Herrera, Luis','Isola, Gonzalo','Juncos, Emilio Carlos','Levy, Martin Jaime','Martin Jerez, Mariano','Neustadt, Alejandro','Peker, Tamara','Quiroga, Ignacio','Reist, Joaquín','Ruiz, Vanesa','Salem, Matías','Scarramberg, Julian','Schild, Jonathan Kevin','SILVA ARBALLO, Sebastian','THORP, Mario','Torres, Celeste','Viali, Juan','Vicentela, Carlos'
+    'Gomez Beret Agustin',
 ]
 
 function shuffle(arr) {
