@@ -14,6 +14,10 @@ router.get("/clase2",function(req,res){
   res.render("clase2");
 });
 
+router.get("/repaso-clase2",function(req,res){
+  res.render("repaso-clase2");
+});
+
 router.get("/mercadoliebre",function(req,res){
   res.render("meli");
 });
