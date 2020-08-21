@@ -1,0 +1,86 @@
+h1{
+    color:green;
+}
+a{
+    color:yellow;
+    text-decoration: line-through;
+}
+
+/*BOTONES DEL SITIO*/
+button{
+    width:150px;
+    font-family: Helvetica,sans-serif;
+    padding: 18px 32px;
+    text-align:center;
+    border:none;
+    border-radius: 5px;
+}
+button.cancelar{
+    background:grey;
+}
+button.guardar{
+    background:green;
+}
+button.volver{
+    background:none;
+}
+/*SECCION NOSOTROS*/
+h3#nosotros{
+    color:grey;
+}
+.border-3{
+    border:3px solid white;
+}
+.letra-roja{
+    color:rgb(185, 40, 40);
+}
+.alert-success{
+    color:red;
+}
+.tamanio-grande{
+font-size:20px;
+}
+
+ul a li{
+    background:black;
+    color:white;
+}
+li{
+    list-style: none;
+    color:yellow;
+}
+hr{
+    width:90%;
+}
+.marcador{
+    background:yellow;
+    color:black;
+    font-style:italic;
+}
+section.politica{
+
+}
+section.politica a{
+
+}
+section.politica a span.marcador{
+
+}
+/*
+div.contenedor section#politica article.notas{
+
+}
+div.contenedor section#economia article.notas{
+    
+}
+article.notas{
+    
+}
+ol a li{
+
+}
+*/
+
+a{
+    color: rgba(30, 97, 114,0.5);
+}
