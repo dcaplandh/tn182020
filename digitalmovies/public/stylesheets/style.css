@@ -1,8 +1,85 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+p{
+  font-size: 12px;
 }
+
+h3{
+  font-size: 24px;
+}
+
+.header{
+  background-color: #EAC926;
+}
+
+.header ul li{
+  list-style-type: none;
+}
+
+.header ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.main{
+  background-color: #ebebeb;
+}
+
+.price{
+  font-size: 18px;
+}
+
+.discount,
+.description{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description{
+  color: #666;
+}
+
+.main div{
+  background-color: #fff;
+}
+
+.main i,
+.discount{
+  color: #39b54a;
+}
+
+.footer{
+  color: #666;
+}
+
+.footer i{
+  color: #1259c3;
+}
+
+input:focus{
+  border:2px solid red;
+}
+
+p:nth-child(odd){
+background:lightgrey;
+}
+p:nth-child(even){
+  background:white;
+}
+p:first-child{
+  font-size:50px;
+}
+p:last-child{
+  font-size:40px;
+  color:violet;
+}
+/*
+label:hover{
+  font-size:20px;
+  margin-right:20px;
+  transition: 2s;
+}
+*/

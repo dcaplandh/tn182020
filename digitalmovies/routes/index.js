@@ -18,8 +18,23 @@ router.get("/repaso-clase2",function(req,res){
   res.render("repaso-clase2");
 });
 
+router.get("/clase3",function(req,res){
+  res.render("clase3");
+});
+
 router.get("/mercadoliebre",function(req,res){
   res.render("meli");
+});
+
+router.get("/register",function(req,res){
+  res.render("register");
+});
+
+router.post("/register",function(req,res){
+  //recibir datos
+  //cargo en la bbdd
+  
+  res.send("recibido con exito")
 });
 
 module.exports = router;
