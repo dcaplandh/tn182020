@@ -24,7 +24,12 @@ router.get("/clase3",function(req,res){
 
 router.get("/clase4",function(req,res){
   res.render("clase4");
-})
+});
+
+router.get("/repaso-28-8",function(req,res){
+  res.render("repaso-28-8");
+});
+
 router.get("/mercadoliebre",function(req,res){
   res.render("meli");
 });

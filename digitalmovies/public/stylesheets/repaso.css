@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+div.banner{
+    background:violet;
+    height:100px;
+}
+h1{
+    text-align: center;
+    width:400px;
+    margin:auto;
+}
+aside,section{
+    display:inline-block;
+    vertical-align: top;
+}
+main{
+    margin:auto;
+    width:755px;
+}
+aside{
+    height:500px;
+    width:150px;
+    background:red;
+}
+section{
+    height:500px;
+    width:600px;
+    background:green;
+}
+div.centrado{
+    margin:auto;
+    width: 550px;
+}
+main section div.centrado article{
+    width:176px;
+    height:176px;
+    background:white;
+    display:inline-block;
+    margin:2px;
+}
+
+div.entradas{
+    width:600px;
+    margin:50px auto;
+    border:1px solid black;
+}
+
+div.entradas .foto{
+    width:200px;
+    height:120px;
+    background:pink;
+    border:1px solid black;
+    display:inline-inline;
+    float:right;
+}
