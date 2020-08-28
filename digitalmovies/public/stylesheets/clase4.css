@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background:red;
+    height: 120px;
+}
+header div#logo{
+    display:inline-block;
+    height:100px;
+    width:100px;
+    background:yellowgreen;
+    margin-top:10px;
+    margin-left:10px;
+    vertical-align: top;
+}
+header nav{
+    display:inline-block;
+    width:600px;
+    margin-left:600px;
+    margin-top: 25px;
+    vertical-align: top;
+}
+header nav ul{
+    padding-left:0;
+}
+header nav ul li{
+    display:inline-block;
+    text-align:center;
+    background:blue;
+    color:white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right:80px;
+    margin-left:20px;
+}
+aside,main{
+    display:inline-block;
+    height:500px;
+    vertical-align: top;
+}
+aside{
+    width:25%;
+    background:pink;
+}
+main{
+    width:70%;
+    background:grey;
+    margin-left:3%;
+}
+main .banner{
+    height:150px;
+    background:blue;
+}
+main .adv{
+    display:inline-block;
+    width:45%;
+    height:80px;
+    background:white;
+    margin-left:2%;
+}
+main .prods article{
+    height:150px;
+    display:inline-block;
+    background:red;
+    width:18%;
+    margin-left:5px;
+}
+
+footer{
+    height: 80px;
+    background:red;
+}
