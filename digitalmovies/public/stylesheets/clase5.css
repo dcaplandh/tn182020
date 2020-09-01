@@ -1,0 +1,65 @@
+/* BODY PARA CELULAR */
+body{
+    background:Red;
+    margin:0;
+    padding:0;
+    font-size:20px;
+}
+h1{
+    font-size:1.56em;
+}
+ul{
+    background:rgba(255,255,255,0.4);
+    padding:0;
+    margin:0;
+    width:100%;
+}
+ul li{
+    display:inline-block;
+    width:100%;
+}
+.container{
+    width:500px;
+    margin:auto;
+}
+div.caja{
+    min-width:100px;
+    height:100px;
+    display:inline-block;
+    margin:0 10px;
+}
+div.uno{
+    background:white;
+}
+div.dos{
+    background:green;
+}
+div.tres{
+    background:pink;
+}
+div.cuatro{
+    background:blue;
+}
+@media(max-width:426px){
+    .caja{
+        display:block;
+        width:45%;
+        margin:auto!important;
+    }
+}
+@media (min-width:700px){
+    /* BODY PARA tablet */
+    body{
+        background:yellow;
+    }
+    ul li{
+        width:100px;
+    }
+}
+/*mobile first*/
+@media (min-width:1000px){
+    /* BODY PARA WEB */
+    body{
+        background:green;
+    }
+}
