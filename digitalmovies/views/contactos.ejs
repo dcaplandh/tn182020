@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+</head>
+<body>
+    <ul>
+        <% for(let i=0; i < contactos.length; i++){ %>
+           <li>
+               <a href="/instagram/<%= contactos[i].username %>"><%= contactos[i].nombre %></a>
+           </li> 
+        <% } %>
+    </ul>
+
+    <form action="/register" method="POST">
+        <input type="text" name="usuario">
+        <input type="password" name="contrasenia">
+        <button type="submit">registrarme</button>
+    </form>
+
+    <form action="/login" method="POST">
+        <input type="text" name="usuario">
+        <input type="password" name="contrasenia">
+        <button type="submit">loguearme</button>
+    </form>
+
+    <form action="/buscador" method="GET">
+        <input type="text" name="busqueda">
+        <button type="submit">buscar</button>
+    </form>
+
+
+</body>
+</html>

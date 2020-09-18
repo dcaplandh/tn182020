@@ -30,6 +30,10 @@ router.get("/clase5",function(req,res){
   res.render("clase5");
 });
 
+router.get("/flex",function(req,res){
+  res.render("flex");
+});
+
 router.get("/repaso-28-8",function(req,res){
   res.render("repaso-28-8");
 });
@@ -49,4 +53,55 @@ router.post("/register",function(req,res){
   res.send("recibido con exito")
 });
 
+const vistasController = require('../controllers/vistas');
+
+router.get("/prueba-vista",vistasController.vistaPrueba);
+
+
+const facebookController = require("../controllers/facebookController");
+router.get("/recibir-login",facebookController.recibirLogin);
+
+router.get("/amigos",function(req,res,next){
+  let amigos = ["Carlos","Ana","Maria","Jose","Luis"];
+  let usuarioLogueado = "";
+  let productos = [
+    {
+      precio : 300,
+      nombre : "Remera"
+    },
+    {
+      precio : 200,
+      nombre : "Blusa"
+    },
+    {
+      precio : 500,
+      nombre : "Pantalon"
+    },
+    {
+      precio : 500,
+      nombre : "Medias"
+    },
+  ]
+  
+  let descuentoEnPesos = 45;
+  res.render("amigos",{
+    amigos:amigos,
+    usuarioLogueado,
+    productos,
+    horaDeldia: "19",
+    descuentoEnPesos
+  });
+})
+
+//get - muestra el form
+router.get("/login",facebookController.login);
+//post - recibe los datos
+router.post("/login",facebookController.sendlogin);
+const userController = require("../controllers/userController");
+router.get("/contactos",userController.contactos);
+router.get("/instagram/:usuario",userController.usuarioInstagram);
+
+
+
+//router.get("/:seccion/:titulo",vistasController.vistaContacto);
 module.exports = router;

@@ -1,0 +1,54 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+.padre{
+    display:flex;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.container div{
+    width:200px;
+    height:400px;
+    border:1px solid red;
+    margin:20px 10px;
+    background:lightgrey;
+    position: relative;
+}
+.container div span{
+    position:absolute;
+    top:195px;
+    width:100%;
+    background:pink;
+    color:black;
+    text-align:center;
+}
+</style>
+
+<div class="padre">
+    <div>1</div>
+    <div class="padre">
+        <div>2.0</div>
+        <div>2.1</div>
+        <div>2.2</div>
+        <div>2.3</div>
+    </div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+
+<div class="container">
+    <div><span>1</span></div>
+    <div><span>2</span></div>
+    <div><span>3</span></div>
+    <div><span>4</span></div>
+    <div><span>5</span></div>
+    <div><span>6</span></div>
+    <div><span>7</span></div>
+</div>

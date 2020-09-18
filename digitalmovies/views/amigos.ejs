@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos</title>
+    <link rel="stylesheet" href="/stylesheets/estilos.css">
+</head>
+<body>
+    <%- include("partials/header",{usuarioLogueado}) %>
+    
+    <ul>
+        <% for(var i = 0; i < amigos.length; i++){ %>
+            <li><%= amigos[i] %></li>
+        <% } %>
+    </ul>
+    <section>
+        <% for(var i = 0; i < productos.length; i++){ %>
+            <%- include("partials/productCard",{
+                producto: productos[i]
+            }) %>
+        <% } %>
+    </section>
+</body>
+</html>

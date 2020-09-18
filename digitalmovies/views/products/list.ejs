@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de productos</title>
+</head>
+<body>
+    <a href="/products/create">AGREGAR PRODUCTO NUEVO</a>
+    <div style="display:flex;align-items: center;justify-content: space-around;">
+        <div>ID</div>
+        <div>NOMBRE</div>
+        <div>PRECIO</div>
+        <div>DESCRIPCION</div>
+        <div>ACCIONES</div>
+    </div>
+    <% for(var i = 0; i < products.length; i++){ %>
+        <div style="display:flex;align-items: center;justify-content: space-around;">
+            <div><%= products[i].product_id %></div>
+            <div><%= products[i].product_name %></div>
+            <div><%= products[i].product_price %></div>
+            <div><%= products[i].product_description %></div>
+            <div>
+                <a href="/products/edit/<%= products[i].product_id %>">EDITAR</a>
+                <a href="/products/destroy/<%= products[i].product_id %>">BORRAR</a>
+            </div>
+        </div>
+    <% } %>
+</body>
+</html>

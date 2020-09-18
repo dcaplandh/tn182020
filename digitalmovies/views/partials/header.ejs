@@ -1,0 +1,15 @@
+<header>
+    <h1>Amigos de <%= usuarioLogueado %></h1>
+    <nav>
+        <ul>
+            <% if(usuarioLogueado){ %>
+                <li>Hola <%= usuarioLogueado %></li>
+            <% }else{  %>
+                <li>LOGIN</li>
+                <li>REGISTRO</li>
+            <% } %>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    
+</header>
