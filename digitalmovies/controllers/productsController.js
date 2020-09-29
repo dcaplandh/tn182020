@@ -10,6 +10,7 @@ const productsController = {
         //guardar el producto en el json
         //tomo el producto como objeto
         let newProduct = req.body;
+        newProduct.image = req.files[0].filename;
         newProduct.product_id = Number(req.body.product_id);
         //puede ser con codigo unico
         //newProduct.product_id = Date.now();

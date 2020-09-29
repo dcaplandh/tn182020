@@ -6,7 +6,7 @@
     <title>Alta de producto</title>
 </head>
 <body>
-    <form action="/products/create" method="POST">
+    <form action="/products/create" method="POST" enctype="multipart/form-data">
         id:
         <input type="text" name="product_id">
         <br>
@@ -18,6 +18,8 @@
         <br>
         descripcion
         <input type="text" name="product_description">
+        <br>
+        <input type="file" name="product_image" accept="png/jpg">
         <br>
         <button type="submit">crear</button>
     </form>
