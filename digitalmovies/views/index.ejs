@@ -5,7 +5,26 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <nav>
+      <ul class="opciones">
+      </ul>
+    </nav>
+    <div class="modal">BIENVENIDOS</div>
     <h1>Bienvenidos!</h1>
-    <p>Profes:Diego Y Romi</p>
+    <p class="profes">Profes:Diego Y Romi</p>
+    <div class="notificaciones">
+
+    </div>
+    <form action="/ruta" method="GET">
+      <input value="" type="text" name="notificacion">
+      <button type="button">Agregar notificacion</button>
+      <div class="alerta"></div>
+
+      <div class="noti">
+        Notificaciones (<span>0</span>)
+      </div>
+    </form>
+
+  <script src="/funciones.js"></script>
   </body>
 </html>

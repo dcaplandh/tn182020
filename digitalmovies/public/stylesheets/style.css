@@ -83,3 +83,18 @@ label:hover{
   transition: 2s;
 }
 */
+
+.colorRojo{
+  color:red;
+}
+.modal{
+  display:none;
+  border:2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px gray;
+}
+.notificaciones{
+  width:500px;
+  background:lightblue;
+  border:1px solid lightgray;
+}
