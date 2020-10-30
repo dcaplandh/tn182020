@@ -75,6 +75,10 @@ buttonNotificacion.onclick = function(){
 }
 
 
+var lista = document.querySelectorAll("ul.lista li");
+console.log(lista[2].innerHTML = "hola");
 
-
-
+var imagenes = document.querySelectorAll("img");
+imagenes.forEach(function(img){
+    img.style.width = "100%";
+});
