@@ -162,5 +162,9 @@ router.get("/volveracero",function(req,res,next){
   res.cookie("numero",0);
   res.redirect("/contador")
 })
+
+router.get("/eventosjs",function(req,res,next){
+  res.render("eventosjs");
+})
 //router.get("/:seccion/:titulo",vistasController.vistaContacto);
 module.exports = router;
